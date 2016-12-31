@@ -1,6 +1,6 @@
 ## 廖雪峰网站侧边栏辅助
 
-fork自：https://github.com/ipcjs 
+Fork自：https://github.com/ipcjs 
 
 在原作者基础上更改了一些设定
 
