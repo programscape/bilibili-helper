@@ -1,11 +1,9 @@
 // ==UserScript==
 // @name         Toggle Sidebar For underscorejs.org & liaoxuefeng
 // @namespace    http://tampermonkey.net/
-// @version      0.7
+// @version      1.0
 // @description  RT.
-// @author       ipcjs
-// @include      http://underscorejs.org/
-// @include      http://learningcn.com/underscore/
+// @author       programscape @fork since pcjs
 // @include      http://www.liaoxuefeng.com/wiki/*
 // @grant        none
 // @require      https://rawgit.com/jakiestfu/Snap.js/develop/snap.min.js
@@ -21,13 +19,11 @@
         marginLeft: '260px', // container attr
         func: null // to run funcation
     }, configMap = {
-        'underscorejs.org': defaultConfig,
-        'learningcn.com': defaultConfig,
         'www.liaoxuefeng.com': {
             sidebar: '#main .x-sidebar-left', container: '#main .x-center',
-            maxPosition: 270, minPosition: -270,
-            top: '48px', width: '216px',
-            marginLeft: '220px',
+            maxPosition: 356, minPosition: -356,
+            top: '108px', width: '320px',
+            marginLeft: '336px',
             func: function () {
                 document.querySelector('#footer').style.display = 'none';
                 var id = window.location.pathname.split('/').reverse()[0];
