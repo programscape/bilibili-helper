@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         fixed_sidebar.user for liaoxuefeng
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  RT.
 // @author       programscape @fork form ipcjs
 // @include      http://www.liaoxuefeng.com/wiki/*
@@ -21,9 +21,9 @@
     }, configMap = {
         'www.liaoxuefeng.com': {
             sidebar: '#main .x-sidebar-left', container: '#main .x-center',
-            maxPosition: 346, minPosition: -346,
+            maxPosition: 356, minPosition: -356,
             top: '108px', width: '300px',
-            marginLeft: '326px',
+            marginLeft: '336px',
             func: function () {
                 document.querySelector('#footer').style.display = 'none';
                 var id = window.location.pathname.split('/').reverse()[0];
