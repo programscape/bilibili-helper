@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.3
 // @description  RT.
-// @author       programscape @fork form ipcjs
+// @author       programscape 
 // @include      http://www.liaoxuefeng.com/wiki/*
 // @grant        none
 // @require      https://rawgit.com/jakiestfu/Snap.js/develop/snap.min.js
