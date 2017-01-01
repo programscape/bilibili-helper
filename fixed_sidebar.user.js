@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Toggle Sidebar For underscorejs.org & liaoxuefeng
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  RT.
-// @author       programscape @fork since pcjs
+// @author       programscape @fork form ipcjs
 // @include      http://www.liaoxuefeng.com/wiki/*
 // @grant        none
 // @require      https://rawgit.com/jakiestfu/Snap.js/develop/snap.min.js
@@ -66,6 +66,7 @@
     sidebar.style.top = config.top;
     sidebar.style.bottom = '0px';
     sidebar.style.position = 'fixed';
+    sidebar.className += ' hide-scrollbar-ipcjs';
 
     /* set toggleBtn attr */
     toggleBtn = document.createElement('a');
@@ -107,7 +108,29 @@
 pre .comment {
     font-style: normal;
 }
+.hide-scrollbar-ipcjs::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.hide-scrollbar-ipcjs::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+}
+.hide-scrollbar-ipcjs:hover::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+}
 /* css.end */
     `;
     document.querySelector('head').appendChild(style);
+
+    /* auto show/hide sidebar */
+    window.addEventListener('resize', resetSnap);
+    resetSnap();
+    function resetSnap() {
+        if (window.innerWidth < 768) {
+            snapper.open('right'); // open() to close...
+        } else {
+            snapper.close(); // close() to open...
+        }
+    }
 })();
