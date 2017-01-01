@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Toggle Sidebar For underscorejs.org & liaoxuefeng
+// @name         fixed_sidebar.user for liaoxuefeng
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  RT.
 // @author       programscape @fork form ipcjs
 // @include      http://www.liaoxuefeng.com/wiki/*
