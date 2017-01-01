@@ -22,7 +22,7 @@
         'www.liaoxuefeng.com': {
             sidebar: '#main .x-sidebar-left', container: '#main .x-center',
             maxPosition: 356, minPosition: -356,
-            top: '108px', width: '320px',
+            top: '108px', width: '300px',
             marginLeft: '336px',
             func: function () {
                 document.querySelector('#footer').style.display = 'none';
