@@ -21,9 +21,9 @@
     }, configMap = {
         'www.liaoxuefeng.com': {
             sidebar: '#main .x-sidebar-left', container: '#main .x-center',
-            maxPosition: 356, minPosition: -356,
+            maxPosition: 346, minPosition: -346,
             top: '108px', width: '300px',
-            marginLeft: '336px',
+            marginLeft: '326px',
             func: function () {
                 document.querySelector('#footer').style.display = 'none';
                 var id = window.location.pathname.split('/').reverse()[0];
