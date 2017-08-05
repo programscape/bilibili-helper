@@ -4,7 +4,7 @@
 // @version      1.3
 // @description  RT.
 // @author       programscape 
-// @include      http://www.liaoxuefeng.com/wiki/*
+// @include      https://www.liaoxuefeng.com/wiki/*
 // @grant        none
 // @require      https://rawgit.com/jakiestfu/Snap.js/develop/snap.min.js
 // ==/UserScript==
